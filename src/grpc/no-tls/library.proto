@@ -1,0 +1,56 @@
+/**
+ * Library.
+ *
+ * This file is really just an example. The data model is completely fictional.
+ */
+syntax = "proto3";
+package library;
+
+/**
+ * Represents a book in the library
+ */
+message Book {
+  string title = 1;             // Book title
+  repeated Author authors = 2;  // Author(s) of the book
+  enum Language {
+    en = 0;                     // English
+    ro = 1;                     // Romanian
+    ru = 2;                     // Russian
+    es = 3;                     // Spanish
+    fr = 4;                     // French
+    de = 5;                     // German
+  }
+  Language language = 3;        // Language (enum)
+  int32 publish_date = 4;       // The year when the book was published
+  int32 pages = 5;              // Number of pages in the book
+  string publisher = 6;         // Publisher of the book
+  int64 isbn = 7;               // ISBN of the book (10 or 13 digits)
+  int32 rack = 8;               // Rack where the book is placed
+  int32 shelf = 9;              // Shelf of that rack
+  bool is_available = 10;       // Is the book in the library at the moment
+}
+
+/**
+ * Represents an author of the book
+ */
+message Author {
+  string name = 1;              // Authors full name
+}
+
+/**
+ * An empty message for testing
+ */
+message NoParams {}
+
+/**
+ * Service for manipulating the books
+ */
+service BookShelf {
+  /// Used to get a random book
+  rpc GetBook(NoParams) returns (Book) {}
+}
+
+
+
+
+

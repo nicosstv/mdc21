@@ -1,0 +1,47 @@
+syntax = "proto3";
+package library;
+
+service Authentication {
+  // Returns JWT for the given credentials
+  rpc Login(Credentials) returns (TokenResponse) {}
+}
+
+message Credentials {
+  string username = 1;
+  string password = 2;
+}
+
+message TokenResponse {
+  string token = 1;
+}
+
+service BookShelf {
+  rpc GetBooks(NoParams) returns (stream Book) {}
+}
+
+message NoParams {}
+
+message Book {
+  string title = 1;
+  repeated Author authors = 2;
+  enum Language {
+    en = 0;
+    ro = 1;
+    ru = 2;
+    es = 3;
+    fr = 4;
+    de = 5;
+  }
+  Language language = 3;
+  int32 publish_date = 4;
+  int32 pages = 5;
+  string publisher = 6;
+  int64 isbn = 7;
+  int32 rack = 8;
+  int32 shelf = 9;
+  bool is_available = 10;
+}
+
+message Author {
+  string name = 1;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "mdc21-json-vs-grpc-p1",
+  "version": "0.0.1",
+  "description": "MDC'21 - Introduction to gRPC - gRPC",
+  "keywords": [],
+  "author": "Nick Shtansky <nshtansky@fusionworks.md>",
+  "license": "MIT",
+  "scripts": {
+    "gns": "cd src/grpc/no-tls && node server.js",
+    "gnc": "cd src/grpc/no-tls && node client.js",
+    "gts": "cd src/grpc/tls && node server.js",
+    "gtc": "cd src/grpc/tls && node client.js",
+    "gss": "cd src/grpc/stream && node server.js",
+    "gsc": "cd src/grpc/stream && node client.js",
+    "jns": "cd src/json/no-tls && node server.js",
+    "jnc": "cd src/json/no-tls && node client.js",
+    "jts": "cd src/json/tls && node server.js",
+    "jtc": "cd src/json/tls && node client.js",
+    "jss": "cd src/json/collection && node server.js",
+    "jsc": "cd src/json/collection && node client.js"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.4.2",
+    "@grpc/proto-loader": "^0.6.6",
+    "google-protobuf": "^3.19.1",
+    "jsonwebtoken": "^8.5.1",
+    "express": "^4.17.1"
+  }
+}

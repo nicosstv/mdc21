@@ -1,0 +1,85 @@
+[
+  {
+    "title": "Двенадцать стульев",
+    "authors": [
+      {
+        "name": "Илья Ильф"
+      },
+      {
+        "name": "Евгений Петров"
+      }
+    ],
+    "language": "ru",
+    "publish_date": 2019,
+    "pages": 416,
+    "publisher": "АСТ",
+    "isbn": 9785171151225,
+    "rack": 1,
+    "shelf": 3,
+    "is_available": true
+  },
+  {
+    "title": "Ultima lună de toamnă",
+    "authors": [
+      {
+        "name": "Ion Druță"
+      }
+    ],
+    "language": "ro",
+    "publish_date": 2012,
+    "pages": 258,
+    "publisher": "Policadran",
+    "isbn": 9789975806411,
+    "rack": 2,
+    "shelf": 6,
+    "is_available": false
+  },
+  {
+    "title": "Angels & Demons",
+    "authors": [
+      {
+        "name": "Dan Brown"
+      }
+    ],
+    "language": "en",
+    "publish_date": 2006,
+    "pages": 736,
+    "publisher": "Pocket Books",
+    "isbn": 9781416524793,
+    "rack": 3,
+    "shelf": 2,
+    "is_available": true
+  },
+  {
+    "title": "Cien años de soledad",
+    "authors": [
+      {
+        "name": "Gabriel García Márquez"
+      }
+    ],
+    "language": "es",
+    "publish_date": 2009,
+    "pages": 496,
+    "publisher": "Vintage Español",
+    "isbn": 9781416524793,
+    "rack": 10,
+    "shelf": 5,
+    "is_available": false
+  },
+  {
+    "title": "Le Comte de Monte-Cristo (tomes I à VI)",
+    "authors": [
+      {
+        "name": "Alexandre Dumas"
+      }
+    ],
+    "language": "fr",
+    "publish_date": 2017,
+    "pages": 728,
+    "publisher": "Limbroglio",
+    "isbn": 9781542348485,
+    "rack": 7,
+    "shelf": 4,
+    "is_available": true
+  }
+]
